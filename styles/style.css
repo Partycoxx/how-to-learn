@@ -241,7 +241,6 @@
 
 .feynman__subtitle {
   position: relative;
-  width: 648px;
   margin: 70px 0 0;
   z-index: 1;
   text-align: center;
@@ -280,12 +279,14 @@
   overflow: hidden;
 }
 
-.kaufman__triange {
+.kaufman__triangle {
+  background-image: url('../images/kaufman-triangle.svg');
+  background-size: cover;
   width: 877px;
   height: 877px;
+  position: absolute;
   right: -210px;
   top: 0;
-  position: absolute;
 }
 
 .footer {
@@ -336,7 +337,11 @@
 }
 
 .footer__column-links {
-  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+.footer__column-link {
   text-decoration: none;
   color: #fff;
   line-height: 30px;
